@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <meta name="description" content="Author: Muhammad Insan faqqih, category: online-shop">
+    <title>Uncle Muthu Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2de46b0231.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mobile-container">
+    <nav>
+        <div class="topnav">
+            <a href="#home" class="active">
+                <img src="icon/icon uncle muthu_revisi.png" alt="icon-web" class="icon-web">
+               <b>Uncle Muthu Shop</b>
+            </a>
+            <div id="myLinks">
+              <a href="#profile"><img src="photo_profile\IMG_1408.JPG"  alt="icon photo profile" class="photo-profile"> <b>Muhammad Insan Faqqih</b></a>
+              <a href="#search" aria-label="search button"><i class="fa fa-magnifying-glass"></i><input type="text"placeholder="SEARCH" class="search"></a>
+              <a href="#cart" aria-label="cart Shopping button"><i class="fa fa-cart-shopping"></i> <y>Cart Shopping</y></a>
+              <a href="#mail" aria-label="mail button"><i class="fa fa-envelope"></i><y>Mail</y></a>
+              <a href="#about" aria-label="about button"><i class="fa fa-question fa-xl"></i> <y>About</y></a>
+              <a href="javascript:void(0);" class="dark-mode" onclick="darkmode()"><i class="fa fa-moon"></i></a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </nav>
+    <header>
+        <h1>WELCOME to My shop!</h1>
+        <P>My menu is number one in Malaysia. Culinary Malaysia is best than India.</P>
+    </header>
+    <main>
+       <section id="Menu-uncle">
+        <h2>Menu Uncle, Jom Beli</h2>
+        <div class="grid-container">
+            <div class="ayam-berempah" id="item-1">
+                <img src="screenshot_makanan_minuman/ayam-berempah.jpg" alt="Fried chicken with secret seasoning Uncle Muthu">
+                <div class="ayam-berempah" id="label-ayam-berempah">
+                    <label>Ayam Berempah<br>RM8</label><br>
+                    <div class="jumlah-pesanan">
+                        <button class="kurangi-pesanan">-</button> 
+                        <input id="ice-tea" type="number" aria-valuemin="1" aria-valuemax="100" role="spinbutton" value="1" placeholder="Brp?"></input>
+                        <button class="tambah-pesanan">+</button>  
+                       </div>
+                       <button class="tombol-beli" type="button">BUY!</button>
+                </div>
+            </div>
+            <div class="nasi-lemak" id="item-2">
+                <img src="screenshot_makanan_minuman/nasi-lemak.jpg"  alt="Nasi Lemak with fried chicken and boiled egg">
+                <div class="nasi-lemak" id="label-nasi-lemak">
+                    <label>Nasi Lemak<br>RM10</label><br>
+                    <div class="jumlah-pesanan">
+                        <button class="kurangi-pesanan">-</button> 
+                        <input id="ice-tea" type="number" aria-valuemin="1" aria-valuemax="100" role="spinbutton" value="1" placeholder="Brp?"></input>
+                        <button class="tambah-pesanan">+</button>  
+                       </div>
+                       <button class="tombol-beli" type="button">BUY!</button>
+                </div>
+            </div>
+            <div class="karopok-lekor" id="item-3">
+                <img src="screenshot_makanan_minuman/karopok-lekor.jpg" alt="Karopok Lekor with spicy sauce">
+                <div class="karopok-lekor" id="label-karopok-lekor">
+                    <label>Karopok Lekor<br>RM5</label><br>
+                    <div class="jumlah-pesanan">
+                        <button class="kurangi-pesanan">-</button> 
+                        <input id="ice-tea" type="number" aria-valuemin="1" aria-valuemax="100" role="spinbutton" value="1" placeholder="Brp?"></input>
+                        <button class="tambah-pesanan">+</button>  
+                       </div>
+                       <button class="tombol-beli" type="button">BUY!</button>
+                </div>
+            </div>
+            <div class="teh-tarik" id="item-4">
+                <img src="screenshot_makanan_minuman/teh-tarik.jpg" alt="Tea tarik">
+                <div class="teh-tarik" id="label-teh-tarik">
+                    <label>Tea tarik<br>RM3</label><br>
+                    <div class="jumlah-pesanan">
+                        <button class="kurangi-pesanan">-</button> 
+                        <input id="ice-tea" type="number" aria-valuemin="1" aria-valuemax="100" role="spinbutton" value="1" placeholder="Brp?"></input>
+                        <button class="tambah-pesanan">+</button>  
+                       </div>
+                       <button class="tombol-beli" type="button">BUY!</button>
+                </div>
+            </div>
+            <div class="nasi-kandar" id="item-5">
+                <img src="screenshot_makanan_minuman/nasi-kandar.jpg" alt="Nasi kandar with spicy deep-fried chicken and boiled egg">
+                <div class="nasi-kandar" id="label-nasi-kandar">
+                    <label>Nasi Kandar<br>RM15</label><br>
+                    <div class="jumlah-pesanan">
+                        <button class="kurangi-pesanan">-</button> 
+                        <input id="ice-tea" type="number" aria-valuemin="1" aria-valuemax="100" role="spinbutton" value="1" placeholder="Brp?"></input>
+                        <button class="tambah-pesanan">+</button>  
+                       </div>
+                       <button class="tombol-beli" type="button">BUY!</button>
+                </div>
+            </div>
+            <div class="ice-tea" id="item-6">
+                <img src="screenshot_makanan_minuman/ice-tea.jpg" alt="ice-tea">
+                <div class="ice-tea" id="label-ice-tea">
+                    <label>Ice tea<br>RM2</label><br>
+                    <div class="jumlah-pesanan">
+                        <button class="kurangi-pesanan">-</button> 
+                        <input id="ice-tea" type="number" aria-valuemin="1" aria-valuemax="100" role="spinbutton" value="1" placeholder="Brp?"></input>
+                        <button class="tambah-pesanan">+</button>  
+                       </div>
+                       <button class="tombol-beli" type="button">BUY!</button>
+                </div>
+            </div>
+            <div class="mee-goreng" id="item-7">
+                <img src="screenshot_makanan_minuman/mee-goreng mamak.jpg" alt="Fried noodle with chicken and fried egg">
+                <div class="mee-goreng" id="label-mee-goreng">
+                    <label>Mee goreng mamak<br>RM8</label><br>
+                    <div class="jumlah-pesanan">
+                        <button class="kurangi-pesanan">-</button> 
+                        <input id="ice-tea" type="number" aria-valuemin="1" aria-valuemax="100" role="spinbutton" value="1" placeholder="Brp?"></input>
+                        <button class="tambah-pesanan">+</button>  
+                       </div>
+                       <button class="tombol-beli" type="button">BUY!</button>
+                </div>
+            </div>
+            <div class="murukkuk" id="item-8">
+                <img src="screenshot_makanan_minuman/murukkuk.jpg" alt="Murukkuk keik">
+                <div class="murukkuk" id="label-murukkuk">
+                    <label>Murukkuk keik<br>RM4</label><br>
+                    <div class="jumlah-pesanan">
+                        <button class="kurangi-pesanan">-</button> 
+                        <input id="ice-tea" type="number" aria-valuemin="1" aria-valuemax="100" role="spinbutton" value="1" placeholder="Brp?"></input>
+                        <button class="tambah-pesanan">+</button>  
+                       </div>
+                       <button class="tombol-beli" type="button">BUY!</button>
+                </div>
+            </div>
+            <div class="toast" id="item-9">
+                <img src="screenshot_makanan_minuman/roti bakar.jpg" alt="Toast with chocolate glaze and cheese">
+                <div class="toast" id="label-toast">
+                    <label>Toast<br>RM6</label><br>
+                    <div class="jumlah-pesanan">
+                        <button class="kurangi-pesanan">-</button> 
+                        <input id="ice-tea" type="number" aria-valuemin="1" aria-valuemax="100" role="spinbutton" value="1" placeholder="Brp?"></input>
+                        <button class="tambah-pesanan">+</button>  
+                       </div>
+                       <button class="tombol-beli" type="button">BUY!</button>
+                </div>
+            </div>
+            <div class="black-coffe" id="item-10">
+                <img src="screenshot_makanan_minuman/kopi-hitam.jpg" alt="Hot Black Coffee">
+                <div class="black-coffe" id="label-black-coffe">
+                    <label>Black coffe<br>RM6</label><br>
+                    <div class="jumlah-pesanan">
+                        <button class="kurangi-pesanan">-</button> 
+                        <input id="ice-tea" type="number" aria-valuemin="1" aria-valuemax="100" role="spinbutton" value="1" placeholder="Brp?"></input>
+                        <button class="tambah-pesanan">+</button>  
+                       </div>
+                       <button class="tombol-beli" type="button">BUY!</button>
+                </div>
+            </div>
+        </div>
+       </section>
+       <section class="artikel">
+        <h2>Fact About Malaysia Cuisine</h2>
+        <div id="fact-about-malaysia-cuisine">
+            <ul>
+        <li>The characteristic of Malaysian cuisine is coconut milk and uses a lot of spices</li>
+        <li>Malaysian Food Influenced by Malay, Chinese, and Indian Culture</li>
+        <li>Malaysia is majority Muslim. The food is mostly halal food (chicken, beef, lamb, fish)</li>
+        </ul>
+        <picture>
+            <source media="(max-width: 768px)" srcset="gambar_ukuran_kecil.jpg">
+        <img src="Untitled_design.jpg" alt="Malaysia Cuisine">
+        <figcaption>Malaysia Cuisine</figcaption>
+        </picture>
+        </div>
+       </section>
+       <section class="video-profile">
+        <h2>Video profile</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4-t0U5GnT8g?start=7" title="Youtube Video Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> Video profile</iframe>
+       </section>
+       <section id="form-career">
+        <h2>Join Our Partnership</h2>
+        <form enctype="multipart/form-data">
+            <fieldset>
+                <legend>Personal Data</legend>
+                <label for="fullname">Full Name:</label>
+                <input id="fullname" type="text" required placeholder="Fullname" class="input-nama-email">
+                    <label for="birthday">
+                      Enter your birthday:
+                      <br><input type="date" name="bday" required pattern="\d{4}-\d{2}-\d{2}" class="input-birth-date"><br>
+                      <span class="validity"></span>
+                    </label>
+                <label for="email">Email:</label>
+                <input id="email" type="email" required placeholder="Your Email" class="input-nama-email">
+                <label>Are you living in Malaysia?</label><br>
+                <input type="radio" id="yes" name="isMalaysia" value="Male">
+                <label for="yes">YES</label>
+                <input type="radio" id="no" name="isMalaysia" value="Famale">
+                <label for="no">NO</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div>
+                <label>Why you interest with my shop?</label><br><br>
+                <textarea rows="4"
+                id="form-reason"
+                placeholder="Reason to join"
+                ></textarea>
+                <label for="CV">Please Submit your CV!</label><br><br>
+                <input type="file" id="CV" accept=".pdf">
+                </div><br>
+                <div>
+                    <label>Are you sure the answer?</label>
+                    <input type="checkbox" id="answer" value="yes" aria-labelledby="Are you sure the answer?">
+                    <label>Yes</label>
+                </div>
+            </fieldset>
+            <button type="submit" class="submit-cv">SUBMIT!</button>
+        </form>
+    </section>
+    </main>
+</div>
+<script src="script.js"></script>
+    <footer></footer>
+</body>
+</html>
