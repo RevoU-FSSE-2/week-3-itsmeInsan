@@ -537,10 +537,6 @@ font-size: xx-large;
 }
 
 @media only screen and (max-width:450px) {
-    body{
-        background-color: white;
-        color: black;
-    }
     .video-profile iframe{
         width: 250px;
         height: 250px;
@@ -729,8 +725,26 @@ font-size: xx-large;
         height: 20px;
         width: 400px;
     }
+    main h2{
+        color: black;
+    }
+    .artikel{
+        color: black;
+    }
+    #fact-about-malaysia-cuisine li{
+        color: black;
+    }
     .dark-mode{
         background-color: black;
+        color: white;
+    }
+    .dark-mode h2{
+        color: white;
+    }
+    .dark-mode .artikel{
+        color: white;
+    }
+    .dark-mode #fact-about-malaysia-cuisine li{
         color: white;
     }
 }
