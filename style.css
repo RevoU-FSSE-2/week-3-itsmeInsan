@@ -10,8 +10,12 @@
     @font-face {
         font-family: "BlackStars";
         src: url(BlackStars-Regular.ttf);
+    }
+    @font-face {
         font-family: "Caprasimo";
         src: url(Caprasimo-Regular.ttf);
+    }
+    @font-face{
         font-family: "Libre";
         src: url(LibreBaskerville-Regular.ttf);
     }
