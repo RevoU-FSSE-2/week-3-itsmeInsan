@@ -1,5 +1,5 @@
     body{
-        font-family: "BlackStars", "Open Sans", sans-serif;
+        /* font-family: "BlackStars", "Open Sans", sans-serif; */
         background-color: white;
         color: black;
     }
@@ -7,7 +7,16 @@
         background-color: black;
         color: white;
     }
+    @font-face {
+        font-family: "BlackStars";
+        src: url(BlackStars-Regular.ttf);
+        font-family: "Caprasimo";
+        src: url(Caprasimo-Regular.ttf);
+        font-family: "Libre";
+        src: url(LibreBaskerville-Regular.ttf);
+    }
     header{
+        font-family: "Caprasimo", "Open Sans", sans-serif;
         background-color: black;
         color: yellow;
         text-align: center;
@@ -23,6 +32,13 @@
         animation-duration: 3s;
         animation-name: slidein;
     }
+    header p{
+        margin: 0;
+        text-shadow: 2px 2px #146C94;
+    }
+    main{
+        font-family: "Libre", sans-serif;
+    }
     /* header h1{
        animation-duration: 3s;
        animation-name: slidein;
@@ -34,6 +50,7 @@
     .active{
         background-color: #F08300;
         color: black ;
+        font-family: "BlackStars", "Open Sans", sans-serif;
     }
     .active:hover {
         background-color: #F08300;
@@ -689,5 +706,9 @@ font-size: xx-large;
     .search{
         height: 20px;
         width: 400px;
+    }
+    .dark-mode{
+        background-color: black;
+        color: white;
     }
 }
