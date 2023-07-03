@@ -40,6 +40,20 @@
         margin: 0;
         text-shadow: 2px 2px #146C94;
     }
+    header h1{
+        animation: slidein 3s ease-in-out;
+    }
+    @keyframes slidein{
+        from {
+            margin-left: 100%;
+            width: 300%;
+          }
+        
+          to {
+            margin-left: 0%;
+            width: 100%;
+          }
+    }
     main{
         font-family: "Libre", sans-serif;
     }
