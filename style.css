@@ -537,6 +537,10 @@ font-size: xx-large;
 }
 
 @media only screen and (max-width:450px) {
+    body{
+        background-color: white;
+        color: black;
+    }
     .video-profile iframe{
         width: 250px;
         height: 250px;
